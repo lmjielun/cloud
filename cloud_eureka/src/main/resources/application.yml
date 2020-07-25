@@ -1,0 +1,14 @@
+server:
+  port: 8761 # �˿�
+spring:
+  application:
+    name: eureka-server # Ӧ�����ƣ���¼Eureka�󣬻���Eureka����ʾ
+eureka:
+  client:
+    # �Ƿ��Լ�����Ϣע�ᵽEurekaServer��Ĭ����true
+    register-with-eureka: true
+    # �Ƿ���ȡ�����������Ϣ��Ĭ����true
+    fetch-registry: true
+    # EurekaServer�ĵ�ַ���������Լ��ĵ�ַ������Ǽ�Ⱥ����Ҫ��������Server�ĵ�ַ��
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
